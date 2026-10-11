@@ -1,5 +1,5 @@
 # ------------------------------------------------------------
-# Pomodoro Pro — ;ajri Salma 
+# Pomodoro Pro — Majri Salma 
 # ------------------------------------------------------------
 import os, time, re
 from datetime import date, datetime
@@ -169,7 +169,6 @@ with tab_timer:
     with b: st.button("↻ Reset",use_container_width=True,on_click=reset_timer)
     with c: st.button("⏭ Skip",use_container_width=True,on_click=skip_timer)
     with d: st.button("⚡ Focus",use_container_width=True,on_click=lambda:set_phase("focus"))
-    st.caption("Keep this tab open while the timer runs. Browser sleep or notebook disconnection may pause updates.")
     if ss.notice: st.info(ss.notice); ss.notice=""
 with tab_stats:
     df=load_data()
